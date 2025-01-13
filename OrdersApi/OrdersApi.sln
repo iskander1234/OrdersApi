@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrdersApi", "OrdersApi\OrdersApi.csproj", "{768490DC-63BD-4E31-BCBA-55E8BFDA86B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrdersApi.Test", "OrdersApi.Test\OrdersApi.Test.csproj", "{A145D2F8-E845-4D6D-B8BB-043966F0F460}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{768490DC-63BD-4E31-BCBA-55E8BFDA86B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{768490DC-63BD-4E31-BCBA-55E8BFDA86B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{768490DC-63BD-4E31-BCBA-55E8BFDA86B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{768490DC-63BD-4E31-BCBA-55E8BFDA86B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A145D2F8-E845-4D6D-B8BB-043966F0F460}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A145D2F8-E845-4D6D-B8BB-043966F0F460}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A145D2F8-E845-4D6D-B8BB-043966F0F460}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A145D2F8-E845-4D6D-B8BB-043966F0F460}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

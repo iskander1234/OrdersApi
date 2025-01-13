@@ -1,0 +1,476 @@
+2025-01-13 16:16:10.256 +05:00 [INF] Entity Framework Core 6.0.10 initialized 'OrderDbContext' using provider 'Microsoft.EntityFrameworkCore.InMemory:6.0.10' with options: StoreName=OrdersDb 
+2025-01-13 16:16:10.446 +05:00 [INF] Saved 3 entities to in-memory store.
+2025-01-13 16:16:10.525 +05:00 [INF] User profile is available. Using 'C:\Users\ASUS\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-01-13 16:16:10.574 +05:00 [INF] Now listening on: http://localhost:5042
+2025-01-13 16:16:10.577 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-13 16:16:10.578 +05:00 [INF] Hosting environment: Development
+2025-01-13 16:16:10.579 +05:00 [INF] Content root path: C:\С#\OrdersApi\OrdersApi\OrdersApi\
+2025-01-13 16:16:11.195 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5042/swagger/index.html - -
+2025-01-13 16:16:11.315 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5042/swagger/index.html - - - 200 - text/html;charset=utf-8 124.2015ms
+2025-01-13 16:16:11.393 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5042/swagger/v1/swagger.json - -
+2025-01-13 16:16:11.501 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5042/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 107.5589ms
+2025-01-13 16:17:22.430 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5042/api/orders application/json 134
+2025-01-13 16:17:22.438 +05:00 [WRN] Failed to determine the https port for redirect.
+2025-01-13 16:17:22.474 +05:00 [INF] Executing endpoint 'OrdersApi.Presentation.Controllers.OrdersController.CreateOrder (OrdersApi)'
+2025-01-13 16:17:22.491 +05:00 [INF] Route matched with {action = "CreateOrder", controller = "Orders"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreateOrder(OrdersApi.Presentation.DTOs.CreateOrderDto) on controller OrdersApi.Presentation.Controllers.OrdersController (OrdersApi).
+2025-01-13 16:17:22.527 +05:00 [INF] Executing action method OrdersApi.Presentation.Controllers.OrdersController.CreateOrder (OrdersApi) - Validation state: "Valid"
+2025-01-13 16:17:22.530 +05:00 [INF] Создание заказа для клиента Snowbording
+2025-01-13 16:17:22.552 +05:00 [INF] Entity Framework Core 6.0.10 initialized 'OrderDbContext' using provider 'Microsoft.EntityFrameworkCore.InMemory:6.0.10' with options: StoreName=OrdersDb 
+2025-01-13 16:17:22.554 +05:00 [INF] Saved 2 entities to in-memory store.
+2025-01-13 16:17:22.556 +05:00 [INF] Заказ "ebe62586-fb6b-44f9-99fb-39be9b520053" создан
+2025-01-13 16:17:22.564 +05:00 [INF] Executed action method OrdersApi.Presentation.Controllers.OrdersController.CreateOrder (OrdersApi), returned result Microsoft.AspNetCore.Mvc.CreatedAtActionResult in 28.3022ms.
+2025-01-13 16:17:22.572 +05:00 [INF] Executing CreatedAtActionResult, writing value of type 'OrdersApi.Domain.Entities.Order'.
+2025-01-13 16:17:22.606 +05:00 [INF] Executed action OrdersApi.Presentation.Controllers.OrdersController.CreateOrder (OrdersApi) in 109.9306ms
+2025-01-13 16:17:22.607 +05:00 [INF] Executed endpoint 'OrdersApi.Presentation.Controllers.OrdersController.CreateOrder (OrdersApi)'
+2025-01-13 16:17:22.609 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5042/api/orders application/json 134 - 201 - application/json;+charset=utf-8 179.0013ms
+2025-01-13 16:17:45.866 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5042/api/orders?status=pending&minPrice=100&maxPrice=200 - -
+2025-01-13 16:17:45.868 +05:00 [INF] Executing endpoint 'OrdersApi.Presentation.Controllers.OrdersController.GetOrders (OrdersApi)'
+2025-01-13 16:17:45.872 +05:00 [INF] Route matched with {action = "GetOrders", controller = "Orders"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetOrders(System.String, System.Nullable`1[System.Decimal], System.Nullable`1[System.Decimal]) on controller OrdersApi.Presentation.Controllers.OrdersController (OrdersApi).
+2025-01-13 16:17:45.882 +05:00 [INF] Executing action method OrdersApi.Presentation.Controllers.OrdersController.GetOrders (OrdersApi) - Validation state: "Valid"
+2025-01-13 16:17:45.899 +05:00 [INF] Entity Framework Core 6.0.10 initialized 'OrderDbContext' using provider 'Microsoft.EntityFrameworkCore.InMemory:6.0.10' with options: StoreName=OrdersDb 
+2025-01-13 16:17:46.091 +05:00 [INF] Executed action method OrdersApi.Presentation.Controllers.OrdersController.GetOrders (OrdersApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 207.8783ms.
+2025-01-13 16:17:46.093 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[OrdersApi.Domain.Entities.Order, OrdersApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-01-13 16:17:46.094 +05:00 [INF] Executed action OrdersApi.Presentation.Controllers.OrdersController.GetOrders (OrdersApi) in 220.4456ms
+2025-01-13 16:17:46.095 +05:00 [INF] Executed endpoint 'OrdersApi.Presentation.Controllers.OrdersController.GetOrders (OrdersApi)'
+2025-01-13 16:17:46.096 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5042/api/orders?status=pending&minPrice=100&maxPrice=200 - - - 200 - application/json;+charset=utf-8 229.5125ms
+2025-01-13 16:18:12.048 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5042/api/orders?status=pending&minPrice=200&maxPrice=200 - -
+2025-01-13 16:18:12.051 +05:00 [INF] Executing endpoint 'OrdersApi.Presentation.Controllers.OrdersController.GetOrders (OrdersApi)'
+2025-01-13 16:18:12.052 +05:00 [INF] Route matched with {action = "GetOrders", controller = "Orders"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetOrders(System.String, System.Nullable`1[System.Decimal], System.Nullable`1[System.Decimal]) on controller OrdersApi.Presentation.Controllers.OrdersController (OrdersApi).
+2025-01-13 16:18:12.054 +05:00 [INF] Executing action method OrdersApi.Presentation.Controllers.OrdersController.GetOrders (OrdersApi) - Validation state: "Valid"
+2025-01-13 16:18:12.055 +05:00 [INF] Entity Framework Core 6.0.10 initialized 'OrderDbContext' using provider 'Microsoft.EntityFrameworkCore.InMemory:6.0.10' with options: StoreName=OrdersDb 
+2025-01-13 16:18:12.060 +05:00 [INF] Executed action method OrdersApi.Presentation.Controllers.OrdersController.GetOrders (OrdersApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 5.6032ms.
+2025-01-13 16:18:12.062 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[OrdersApi.Domain.Entities.Order, OrdersApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-01-13 16:18:12.064 +05:00 [INF] Executed action OrdersApi.Presentation.Controllers.OrdersController.GetOrders (OrdersApi) in 10.3153ms
+2025-01-13 16:18:12.065 +05:00 [INF] Executed endpoint 'OrdersApi.Presentation.Controllers.OrdersController.GetOrders (OrdersApi)'
+2025-01-13 16:18:12.065 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5042/api/orders?status=pending&minPrice=200&maxPrice=200 - - - 200 - application/json;+charset=utf-8 17.1228ms
+2025-01-13 16:18:17.208 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5042/api/orders?status=pending&minPrice=100&maxPrice=200 - -
+2025-01-13 16:18:17.209 +05:00 [INF] Executing endpoint 'OrdersApi.Presentation.Controllers.OrdersController.GetOrders (OrdersApi)'
+2025-01-13 16:18:17.210 +05:00 [INF] Route matched with {action = "GetOrders", controller = "Orders"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetOrders(System.String, System.Nullable`1[System.Decimal], System.Nullable`1[System.Decimal]) on controller OrdersApi.Presentation.Controllers.OrdersController (OrdersApi).
+2025-01-13 16:18:17.212 +05:00 [INF] Executing action method OrdersApi.Presentation.Controllers.OrdersController.GetOrders (OrdersApi) - Validation state: "Valid"
+2025-01-13 16:18:17.214 +05:00 [INF] Entity Framework Core 6.0.10 initialized 'OrderDbContext' using provider 'Microsoft.EntityFrameworkCore.InMemory:6.0.10' with options: StoreName=OrdersDb 
+2025-01-13 16:18:17.216 +05:00 [INF] Executed action method OrdersApi.Presentation.Controllers.OrdersController.GetOrders (OrdersApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 3.4301ms.
+2025-01-13 16:18:17.218 +05:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[OrdersApi.Domain.Entities.Order, OrdersApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-01-13 16:18:17.219 +05:00 [INF] Executed action OrdersApi.Presentation.Controllers.OrdersController.GetOrders (OrdersApi) in 7.4907ms
+2025-01-13 16:18:17.220 +05:00 [INF] Executed endpoint 'OrdersApi.Presentation.Controllers.OrdersController.GetOrders (OrdersApi)'
+2025-01-13 16:18:17.221 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5042/api/orders?status=pending&minPrice=100&maxPrice=200 - - - 200 - application/json;+charset=utf-8 12.8089ms
+2025-01-13 16:18:43.262 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5042/api/orders/f50f6e03-e950-438a-9ba2-73ce6670d729 - -
+2025-01-13 16:18:43.263 +05:00 [INF] Executing endpoint 'OrdersApi.Presentation.Controllers.OrdersController.GetOrderById (OrdersApi)'
+2025-01-13 16:18:43.266 +05:00 [INF] Route matched with {action = "GetOrderById", controller = "Orders"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetOrderById(System.Guid) on controller OrdersApi.Presentation.Controllers.OrdersController (OrdersApi).
+2025-01-13 16:18:43.268 +05:00 [INF] Executing action method OrdersApi.Presentation.Controllers.OrdersController.GetOrderById (OrdersApi) - Validation state: "Valid"
+2025-01-13 16:18:43.281 +05:00 [INF] Entity Framework Core 6.0.10 initialized 'OrderDbContext' using provider 'Microsoft.EntityFrameworkCore.InMemory:6.0.10' with options: StoreName=OrdersDb 
+2025-01-13 16:18:43.309 +05:00 [INF] Executed action method OrdersApi.Presentation.Controllers.OrdersController.GetOrderById (OrdersApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 39.5873ms.
+2025-01-13 16:18:43.310 +05:00 [INF] Executing OkObjectResult, writing value of type 'OrdersApi.Domain.Entities.Order'.
+2025-01-13 16:18:43.311 +05:00 [INF] Executed action OrdersApi.Presentation.Controllers.OrdersController.GetOrderById (OrdersApi) in 44.0269ms
+2025-01-13 16:18:43.312 +05:00 [INF] Executed endpoint 'OrdersApi.Presentation.Controllers.OrdersController.GetOrderById (OrdersApi)'
+2025-01-13 16:18:43.313 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5042/api/orders/f50f6e03-e950-438a-9ba2-73ce6670d729 - - - 200 - application/json;+charset=utf-8 50.9344ms
+2025-01-13 16:19:08.801 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5042/api/orders/ebe62586-fb6b-44f9-99fb-39be9b520053 - -
+2025-01-13 16:19:08.802 +05:00 [INF] Executing endpoint 'OrdersApi.Presentation.Controllers.OrdersController.GetOrderById (OrdersApi)'
+2025-01-13 16:19:08.803 +05:00 [INF] Route matched with {action = "GetOrderById", controller = "Orders"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetOrderById(System.Guid) on controller OrdersApi.Presentation.Controllers.OrdersController (OrdersApi).
+2025-01-13 16:19:08.805 +05:00 [INF] Executing action method OrdersApi.Presentation.Controllers.OrdersController.GetOrderById (OrdersApi) - Validation state: "Valid"
+2025-01-13 16:19:08.806 +05:00 [INF] Entity Framework Core 6.0.10 initialized 'OrderDbContext' using provider 'Microsoft.EntityFrameworkCore.InMemory:6.0.10' with options: StoreName=OrdersDb 
+2025-01-13 16:19:08.808 +05:00 [INF] Executed action method OrdersApi.Presentation.Controllers.OrdersController.GetOrderById (OrdersApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2.4117ms.
+2025-01-13 16:19:08.810 +05:00 [INF] Executing OkObjectResult, writing value of type 'OrdersApi.Domain.Entities.Order'.
+2025-01-13 16:19:08.811 +05:00 [INF] Executed action OrdersApi.Presentation.Controllers.OrdersController.GetOrderById (OrdersApi) in 6.087ms
+2025-01-13 16:19:08.812 +05:00 [INF] Executed endpoint 'OrdersApi.Presentation.Controllers.OrdersController.GetOrderById (OrdersApi)'
+2025-01-13 16:19:08.812 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5042/api/orders/ebe62586-fb6b-44f9-99fb-39be9b520053 - - - 200 - application/json;+charset=utf-8 11.2126ms
+2025-01-13 16:19:35.073 +05:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5042/api/orders/ebe62586-fb6b-44f9-99fb-39be9b520053 - -
+2025-01-13 16:19:35.074 +05:00 [INF] Executing endpoint 'OrdersApi.Presentation.Controllers.OrdersController.DeleteOrder (OrdersApi)'
+2025-01-13 16:19:35.077 +05:00 [INF] Route matched with {action = "DeleteOrder", controller = "Orders"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult DeleteOrder(System.Guid) on controller OrdersApi.Presentation.Controllers.OrdersController (OrdersApi).
+2025-01-13 16:19:35.078 +05:00 [INF] Executing action method OrdersApi.Presentation.Controllers.OrdersController.DeleteOrder (OrdersApi) - Validation state: "Valid"
+2025-01-13 16:19:35.080 +05:00 [INF] Entity Framework Core 6.0.10 initialized 'OrderDbContext' using provider 'Microsoft.EntityFrameworkCore.InMemory:6.0.10' with options: StoreName=OrdersDb 
+2025-01-13 16:19:35.086 +05:00 [INF] Saved 1 entities to in-memory store.
+2025-01-13 16:19:35.088 +05:00 [INF] Заказ "ebe62586-fb6b-44f9-99fb-39be9b520053" помечен как удалён
+2025-01-13 16:19:35.089 +05:00 [INF] Executed action method OrdersApi.Presentation.Controllers.OrdersController.DeleteOrder (OrdersApi), returned result Microsoft.AspNetCore.Mvc.NoContentResult in 9.9827ms.
+2025-01-13 16:19:35.091 +05:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2025-01-13 16:19:35.092 +05:00 [INF] Executed action OrdersApi.Presentation.Controllers.OrdersController.DeleteOrder (OrdersApi) in 14.2205ms
+2025-01-13 16:19:35.093 +05:00 [INF] Executed endpoint 'OrdersApi.Presentation.Controllers.OrdersController.DeleteOrder (OrdersApi)'
+2025-01-13 16:19:35.094 +05:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5042/api/orders/ebe62586-fb6b-44f9-99fb-39be9b520053 - - - 204 - - 20.5165ms
+2025-01-13 16:19:44.312 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5042/api/orders/ebe62586-fb6b-44f9-99fb-39be9b520053 - -
+2025-01-13 16:19:44.313 +05:00 [INF] Executing endpoint 'OrdersApi.Presentation.Controllers.OrdersController.GetOrderById (OrdersApi)'
+2025-01-13 16:19:44.314 +05:00 [INF] Route matched with {action = "GetOrderById", controller = "Orders"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetOrderById(System.Guid) on controller OrdersApi.Presentation.Controllers.OrdersController (OrdersApi).
+2025-01-13 16:19:44.316 +05:00 [INF] Executing action method OrdersApi.Presentation.Controllers.OrdersController.GetOrderById (OrdersApi) - Validation state: "Valid"
+2025-01-13 16:19:44.317 +05:00 [INF] Entity Framework Core 6.0.10 initialized 'OrderDbContext' using provider 'Microsoft.EntityFrameworkCore.InMemory:6.0.10' with options: StoreName=OrdersDb 
+2025-01-13 16:19:44.320 +05:00 [INF] Executed action method OrdersApi.Presentation.Controllers.OrdersController.GetOrderById (OrdersApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 3.0698ms.
+2025-01-13 16:19:44.322 +05:00 [INF] Executing OkObjectResult, writing value of type 'OrdersApi.Domain.Entities.Order'.
+2025-01-13 16:19:44.323 +05:00 [INF] Executed action OrdersApi.Presentation.Controllers.OrdersController.GetOrderById (OrdersApi) in 7.599ms
+2025-01-13 16:19:44.325 +05:00 [INF] Executed endpoint 'OrdersApi.Presentation.Controllers.OrdersController.GetOrderById (OrdersApi)'
+2025-01-13 16:19:44.325 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5042/api/orders/ebe62586-fb6b-44f9-99fb-39be9b520053 - - - 200 - application/json;+charset=utf-8 13.3606ms
+2025-01-13 16:19:51.160 +05:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5042/api/orders/ebe62586-fb6b-44f9-99fb-39be9b520053 - -
+2025-01-13 16:19:51.161 +05:00 [INF] Executing endpoint 'OrdersApi.Presentation.Controllers.OrdersController.DeleteOrder (OrdersApi)'
+2025-01-13 16:19:51.162 +05:00 [INF] Route matched with {action = "DeleteOrder", controller = "Orders"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult DeleteOrder(System.Guid) on controller OrdersApi.Presentation.Controllers.OrdersController (OrdersApi).
+2025-01-13 16:19:51.164 +05:00 [INF] Executing action method OrdersApi.Presentation.Controllers.OrdersController.DeleteOrder (OrdersApi) - Validation state: "Valid"
+2025-01-13 16:19:51.166 +05:00 [INF] Entity Framework Core 6.0.10 initialized 'OrderDbContext' using provider 'Microsoft.EntityFrameworkCore.InMemory:6.0.10' with options: StoreName=OrdersDb 
+2025-01-13 16:19:51.169 +05:00 [INF] Заказ "ebe62586-fb6b-44f9-99fb-39be9b520053" помечен как удалён
+2025-01-13 16:19:51.170 +05:00 [INF] Executed action method OrdersApi.Presentation.Controllers.OrdersController.DeleteOrder (OrdersApi), returned result Microsoft.AspNetCore.Mvc.NoContentResult in 3.9626ms.
+2025-01-13 16:19:51.171 +05:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2025-01-13 16:19:51.172 +05:00 [INF] Executed action OrdersApi.Presentation.Controllers.OrdersController.DeleteOrder (OrdersApi) in 8.0548ms
+2025-01-13 16:19:51.173 +05:00 [INF] Executed endpoint 'OrdersApi.Presentation.Controllers.OrdersController.DeleteOrder (OrdersApi)'
+2025-01-13 16:19:51.174 +05:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5042/api/orders/ebe62586-fb6b-44f9-99fb-39be9b520053 - - - 204 - - 13.5938ms
+2025-01-13 16:20:13.980 +05:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5042/api/orders/f50f6e03-e950-438a-9ba2-73ce6670d729 application/json 24
+2025-01-13 16:20:13.981 +05:00 [INF] Executing endpoint 'OrdersApi.Presentation.Controllers.OrdersController.UpdateOrder (OrdersApi)'
+2025-01-13 16:20:13.983 +05:00 [INF] Route matched with {action = "UpdateOrder", controller = "Orders"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult UpdateOrder(System.Guid, OrdersApi.Presentation.DTOs.UpdateOrderDto) on controller OrdersApi.Presentation.Controllers.OrdersController (OrdersApi).
+2025-01-13 16:20:13.986 +05:00 [INF] Executing action method OrdersApi.Presentation.Controllers.OrdersController.UpdateOrder (OrdersApi) - Validation state: "Valid"
+2025-01-13 16:20:13.989 +05:00 [INF] Entity Framework Core 6.0.10 initialized 'OrderDbContext' using provider 'Microsoft.EntityFrameworkCore.InMemory:6.0.10' with options: StoreName=OrdersDb 
+2025-01-13 16:20:13.992 +05:00 [INF] Saved 1 entities to in-memory store.
+2025-01-13 16:20:13.992 +05:00 [INF] Заказ "f50f6e03-e950-438a-9ba2-73ce6670d729" обновлен: статус изменился с pending на string
+2025-01-13 16:20:13.994 +05:00 [INF] Executed action method OrdersApi.Presentation.Controllers.OrdersController.UpdateOrder (OrdersApi), returned result Microsoft.AspNetCore.Mvc.NoContentResult in 5.7123ms.
+2025-01-13 16:20:13.995 +05:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2025-01-13 16:20:13.996 +05:00 [INF] Executed action OrdersApi.Presentation.Controllers.OrdersController.UpdateOrder (OrdersApi) in 10.8449ms
+2025-01-13 16:20:13.997 +05:00 [INF] Executed endpoint 'OrdersApi.Presentation.Controllers.OrdersController.UpdateOrder (OrdersApi)'
+2025-01-13 16:20:13.997 +05:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5042/api/orders/f50f6e03-e950-438a-9ba2-73ce6670d729 application/json 24 - 204 - - 17.5717ms
+2025-01-13 16:20:29.530 +05:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5042/api/orders/f50f6e03-e950-438a-9ba2-73ce6670d729 application/json 25
+2025-01-13 16:20:29.531 +05:00 [INF] Executing endpoint 'OrdersApi.Presentation.Controllers.OrdersController.UpdateOrder (OrdersApi)'
+2025-01-13 16:20:29.532 +05:00 [INF] Route matched with {action = "UpdateOrder", controller = "Orders"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult UpdateOrder(System.Guid, OrdersApi.Presentation.DTOs.UpdateOrderDto) on controller OrdersApi.Presentation.Controllers.OrdersController (OrdersApi).
+2025-01-13 16:20:29.534 +05:00 [INF] Executing action method OrdersApi.Presentation.Controllers.OrdersController.UpdateOrder (OrdersApi) - Validation state: "Valid"
+2025-01-13 16:20:29.535 +05:00 [INF] Entity Framework Core 6.0.10 initialized 'OrderDbContext' using provider 'Microsoft.EntityFrameworkCore.InMemory:6.0.10' with options: StoreName=OrdersDb 
+2025-01-13 16:20:29.538 +05:00 [INF] Saved 1 entities to in-memory store.
+2025-01-13 16:20:29.539 +05:00 [INF] Заказ "f50f6e03-e950-438a-9ba2-73ce6670d729" обновлен: статус изменился с string на pending
+2025-01-13 16:20:29.540 +05:00 [INF] Executed action method OrdersApi.Presentation.Controllers.OrdersController.UpdateOrder (OrdersApi), returned result Microsoft.AspNetCore.Mvc.NoContentResult in 5.2368ms.
+2025-01-13 16:20:29.541 +05:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2025-01-13 16:20:29.543 +05:00 [INF] Executed action OrdersApi.Presentation.Controllers.OrdersController.UpdateOrder (OrdersApi) in 9.3729ms
+2025-01-13 16:20:29.544 +05:00 [INF] Executed endpoint 'OrdersApi.Presentation.Controllers.OrdersController.UpdateOrder (OrdersApi)'
+2025-01-13 16:20:29.545 +05:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5042/api/orders/f50f6e03-e950-438a-9ba2-73ce6670d729 application/json 25 - 204 - - 14.8956ms
+2025-01-13 20:12:06.591 +05:00 [INF] Application is shutting down...
+2025-01-13 22:50:18.132 +05:00 [INF] Entity Framework Core 6.0.10 initialized 'OrderDbContext' using provider 'Microsoft.EntityFrameworkCore.InMemory:6.0.10' with options: StoreName=OrdersDb 
+2025-01-13 22:50:18.344 +05:00 [INF] Saved 3 entities to in-memory store.
+2025-01-13 22:50:18.431 +05:00 [INF] User profile is available. Using 'C:\Users\ASUS\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-01-13 22:50:18.491 +05:00 [INF] Now listening on: http://localhost:5042
+2025-01-13 22:50:18.494 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-13 22:50:18.494 +05:00 [INF] Hosting environment: Development
+2025-01-13 22:50:18.495 +05:00 [INF] Content root path: C:\С#\OrdersApi\OrdersApi\OrdersApi\
+2025-01-13 22:50:18.844 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5042/swagger/index.html - -
+2025-01-13 22:50:18.988 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5042/swagger/index.html - - - 200 - text/html;charset=utf-8 152.2298ms
+2025-01-13 22:50:19.066 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5042/swagger/v1/swagger.json - -
+2025-01-13 22:50:19.183 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5042/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 116.7090ms
+2025-01-13 22:52:54.937 +05:00 [INF] Application is shutting down...
+2025-01-13 22:52:59.286 +05:00 [INF] Entity Framework Core 6.0.10 initialized 'OrderDbContext' using provider 'Microsoft.EntityFrameworkCore.InMemory:6.0.10' with options: StoreName=OrdersDb 
+2025-01-13 22:52:59.499 +05:00 [INF] Saved 3 entities to in-memory store.
+2025-01-13 22:52:59.603 +05:00 [INF] User profile is available. Using 'C:\Users\ASUS\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-01-13 22:52:59.672 +05:00 [INF] Now listening on: http://localhost:5042
+2025-01-13 22:52:59.675 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-13 22:52:59.676 +05:00 [INF] Hosting environment: Development
+2025-01-13 22:52:59.677 +05:00 [INF] Content root path: C:\С#\OrdersApi\OrdersApi\OrdersApi\
+2025-01-13 22:53:00.253 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5042/swagger/index.html - -
+2025-01-13 22:53:00.374 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5042/swagger/index.html - - - 200 - text/html;charset=utf-8 127.2834ms
+2025-01-13 22:53:00.452 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5042/swagger/v1/swagger.json - -
+2025-01-13 22:53:00.572 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5042/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 120.5144ms
+2025-01-13 22:54:41.289 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5042/api/orders application/json 125
+2025-01-13 22:54:41.296 +05:00 [WRN] Failed to determine the https port for redirect.
+2025-01-13 22:54:41.344 +05:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (User)
+2025-01-13 22:54:41.351 +05:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-01-13 22:54:41.353 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5042/api/orders application/json 125 - 401 0 - 63.3724ms
+2025-01-13 22:57:32.495 +05:00 [INF] Application is shutting down...
+2025-01-13 22:57:36.543 +05:00 [INF] Entity Framework Core 6.0.10 initialized 'OrderDbContext' using provider 'Microsoft.EntityFrameworkCore.InMemory:6.0.10' with options: StoreName=OrdersDb 
+2025-01-13 22:57:36.733 +05:00 [INF] Saved 3 entities to in-memory store.
+2025-01-13 22:57:36.812 +05:00 [INF] User profile is available. Using 'C:\Users\ASUS\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-01-13 22:57:36.860 +05:00 [INF] Now listening on: http://localhost:5042
+2025-01-13 22:57:36.864 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-13 22:57:36.864 +05:00 [INF] Hosting environment: Development
+2025-01-13 22:57:36.865 +05:00 [INF] Content root path: C:\С#\OrdersApi\OrdersApi\OrdersApi\
+2025-01-13 22:57:37.115 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5042/swagger/index.html - -
+2025-01-13 22:57:37.232 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5042/swagger/index.html - - - 200 - text/html;charset=utf-8 124.3336ms
+2025-01-13 22:57:37.308 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5042/swagger/v1/swagger.json - -
+2025-01-13 22:57:37.427 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5042/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 118.7679ms
+2025-01-13 22:58:09.591 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5042/api/auth/login application/json 52
+2025-01-13 22:58:09.598 +05:00 [WRN] Failed to determine the https port for redirect.
+2025-01-13 22:58:09.631 +05:00 [INF] Executing endpoint 'OrdersApi.Presentation.Controllers.AuthController.Login (OrdersApi)'
+2025-01-13 22:58:09.650 +05:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(OrdersApi.Presentation.DTOs.LoginDto) on controller OrdersApi.Presentation.Controllers.AuthController (OrdersApi).
+2025-01-13 22:58:09.683 +05:00 [INF] Executing action method OrdersApi.Presentation.Controllers.AuthController.Login (OrdersApi) - Validation state: "Valid"
+2025-01-13 22:58:09.691 +05:00 [INF] Executed action method OrdersApi.Presentation.Controllers.AuthController.Login (OrdersApi), returned result Microsoft.AspNetCore.Mvc.UnauthorizedObjectResult in 0.3748ms.
+2025-01-13 22:58:09.700 +05:00 [INF] Executing UnauthorizedObjectResult, writing value of type 'System.String'.
+2025-01-13 22:58:09.707 +05:00 [INF] Executed action OrdersApi.Presentation.Controllers.AuthController.Login (OrdersApi) in 49.9489ms
+2025-01-13 22:58:09.708 +05:00 [INF] Executed endpoint 'OrdersApi.Presentation.Controllers.AuthController.Login (OrdersApi)'
+2025-01-13 22:58:09.709 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5042/api/auth/login application/json 52 - 401 - text/plain;+charset=utf-8 118.5476ms
+2025-01-13 22:58:14.825 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5042/api/auth/login application/json 51
+2025-01-13 22:58:14.827 +05:00 [INF] Executing endpoint 'OrdersApi.Presentation.Controllers.AuthController.Login (OrdersApi)'
+2025-01-13 22:58:14.828 +05:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(OrdersApi.Presentation.DTOs.LoginDto) on controller OrdersApi.Presentation.Controllers.AuthController (OrdersApi).
+2025-01-13 22:58:14.831 +05:00 [INF] Executing action method OrdersApi.Presentation.Controllers.AuthController.Login (OrdersApi) - Validation state: "Valid"
+2025-01-13 22:58:14.946 +05:00 [INF] Executed action method OrdersApi.Presentation.Controllers.AuthController.Login (OrdersApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 113.8316ms.
+2025-01-13 22:58:14.948 +05:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-01-13 22:58:14.952 +05:00 [INF] Executed action OrdersApi.Presentation.Controllers.AuthController.Login (OrdersApi) in 122.8121ms
+2025-01-13 22:58:14.953 +05:00 [INF] Executed endpoint 'OrdersApi.Presentation.Controllers.AuthController.Login (OrdersApi)'
+2025-01-13 22:58:14.954 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5042/api/auth/login application/json 51 - 200 - application/json;+charset=utf-8 129.2760ms
+2025-01-13 23:00:08.189 +05:00 [INF] Application is shutting down...
+2025-01-13 23:00:12.185 +05:00 [INF] Entity Framework Core 6.0.10 initialized 'OrderDbContext' using provider 'Microsoft.EntityFrameworkCore.InMemory:6.0.10' with options: StoreName=OrdersDb 
+2025-01-13 23:00:12.378 +05:00 [INF] Saved 3 entities to in-memory store.
+2025-01-13 23:00:12.474 +05:00 [INF] Now listening on: http://localhost:5042
+2025-01-13 23:00:12.478 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-13 23:00:12.479 +05:00 [INF] Hosting environment: Development
+2025-01-13 23:00:12.480 +05:00 [INF] Content root path: C:\С#\OrdersApi\OrdersApi\OrdersApi\
+2025-01-13 23:00:12.753 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5042/swagger/index.html - -
+2025-01-13 23:00:12.869 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5042/swagger/index.html - - - 200 - text/html;charset=utf-8 121.9166ms
+2025-01-13 23:00:12.946 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5042/swagger/v1/swagger.json - -
+2025-01-13 23:00:13.056 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5042/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 109.6356ms
+2025-01-13 23:00:31.796 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5042/api/auth/login application/json 51
+2025-01-13 23:00:31.803 +05:00 [WRN] Failed to determine the https port for redirect.
+2025-01-13 23:00:31.809 +05:00 [INF] Executing endpoint 'OrdersApi.Presentation.Controllers.AuthController.Login (OrdersApi)'
+2025-01-13 23:00:31.825 +05:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(OrdersApi.Presentation.DTOs.LoginDto) on controller OrdersApi.Presentation.Controllers.AuthController (OrdersApi).
+2025-01-13 23:00:31.855 +05:00 [INF] Executing action method OrdersApi.Presentation.Controllers.AuthController.Login (OrdersApi) - Validation state: "Valid"
+2025-01-13 23:00:31.994 +05:00 [INF] Executed action method OrdersApi.Presentation.Controllers.AuthController.Login (OrdersApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 131.283ms.
+2025-01-13 23:00:32.003 +05:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-01-13 23:00:32.013 +05:00 [INF] Executed action OrdersApi.Presentation.Controllers.AuthController.Login (OrdersApi) in 181.0201ms
+2025-01-13 23:00:32.014 +05:00 [INF] Executed endpoint 'OrdersApi.Presentation.Controllers.AuthController.Login (OrdersApi)'
+2025-01-13 23:00:32.015 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5042/api/auth/login application/json 51 - 200 - application/json;+charset=utf-8 218.3475ms
+2025-01-13 23:00:57.568 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5042/api/auth/login application/json 49
+2025-01-13 23:00:57.570 +05:00 [INF] Executing endpoint 'OrdersApi.Presentation.Controllers.AuthController.Login (OrdersApi)'
+2025-01-13 23:00:57.572 +05:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(OrdersApi.Presentation.DTOs.LoginDto) on controller OrdersApi.Presentation.Controllers.AuthController (OrdersApi).
+2025-01-13 23:00:57.577 +05:00 [INF] Executing action method OrdersApi.Presentation.Controllers.AuthController.Login (OrdersApi) - Validation state: "Valid"
+2025-01-13 23:00:57.579 +05:00 [INF] Executed action method OrdersApi.Presentation.Controllers.AuthController.Login (OrdersApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 0.8563ms.
+2025-01-13 23:00:57.580 +05:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-01-13 23:00:57.582 +05:00 [INF] Executed action OrdersApi.Presentation.Controllers.AuthController.Login (OrdersApi) in 6.6132ms
+2025-01-13 23:00:57.583 +05:00 [INF] Executed endpoint 'OrdersApi.Presentation.Controllers.AuthController.Login (OrdersApi)'
+2025-01-13 23:00:57.584 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5042/api/auth/login application/json 49 - 200 - application/json;+charset=utf-8 15.9790ms
+2025-01-13 23:01:19.819 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5042/api/orders application/json 120
+2025-01-13 23:01:19.827 +05:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (User|Admin)
+2025-01-13 23:01:19.830 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No authenticationScheme was specified, and there was no DefaultChallengeScheme found. The default schemes can be set using either AddAuthentication(string defaultScheme) or AddAuthentication(Action<AuthenticationOptions> configureOptions).
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.ChallengeAsync(HttpContext context, String scheme, AuthenticationProperties properties)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Program.<>c.<<<Main>$>b__0_4>d.MoveNext() in C:\С#\OrdersApi\OrdersApi\OrdersApi\Program.cs:line 123
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2025-01-13 23:01:19.854 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5042/api/orders application/json 120 - 500 - application/json 35.5073ms
+2025-01-13 23:04:36.836 +05:00 [INF] Application is shutting down...
+2025-01-13 23:04:40.917 +05:00 [INF] Entity Framework Core 6.0.10 initialized 'OrderDbContext' using provider 'Microsoft.EntityFrameworkCore.InMemory:6.0.10' with options: StoreName=OrdersDb 
+2025-01-13 23:04:41.108 +05:00 [INF] Saved 3 entities to in-memory store.
+2025-01-13 23:04:41.196 +05:00 [INF] User profile is available. Using 'C:\Users\ASUS\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-01-13 23:04:41.242 +05:00 [INF] Now listening on: http://localhost:5042
+2025-01-13 23:04:41.246 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-13 23:04:41.247 +05:00 [INF] Hosting environment: Development
+2025-01-13 23:04:41.247 +05:00 [INF] Content root path: C:\С#\OrdersApi\OrdersApi\OrdersApi\
+2025-01-13 23:04:41.440 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5042/swagger/index.html - -
+2025-01-13 23:04:41.560 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5042/swagger/index.html - - - 200 - text/html;charset=utf-8 122.9634ms
+2025-01-13 23:04:41.747 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5042/swagger/v1/swagger.json - -
+2025-01-13 23:04:41.861 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5042/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 113.9652ms
+2025-01-13 23:04:46.459 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5042/api/orders application/json 120
+2025-01-13 23:04:46.467 +05:00 [WRN] Failed to determine the https port for redirect.
+2025-01-13 23:04:46.502 +05:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (User|Admin)
+2025-01-13 23:04:46.508 +05:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-01-13 23:04:46.509 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5042/api/orders application/json 120 - 401 0 - 49.8831ms
+2025-01-13 23:04:51.925 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5042/api/auth/login application/json 49
+2025-01-13 23:04:51.932 +05:00 [INF] Executing endpoint 'OrdersApi.Presentation.Controllers.AuthController.Login (OrdersApi)'
+2025-01-13 23:04:51.948 +05:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(OrdersApi.Presentation.DTOs.LoginDto) on controller OrdersApi.Presentation.Controllers.AuthController (OrdersApi).
+2025-01-13 23:04:51.981 +05:00 [INF] Executing action method OrdersApi.Presentation.Controllers.AuthController.Login (OrdersApi) - Validation state: "Valid"
+2025-01-13 23:04:52.098 +05:00 [INF] Executed action method OrdersApi.Presentation.Controllers.AuthController.Login (OrdersApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 109.3782ms.
+2025-01-13 23:04:52.107 +05:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-01-13 23:04:52.116 +05:00 [INF] Executed action OrdersApi.Presentation.Controllers.AuthController.Login (OrdersApi) in 161.4794ms
+2025-01-13 23:04:52.117 +05:00 [INF] Executed endpoint 'OrdersApi.Presentation.Controllers.AuthController.Login (OrdersApi)'
+2025-01-13 23:04:52.118 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5042/api/auth/login application/json 49 - 200 - application/json;+charset=utf-8 192.7233ms
+2025-01-13 23:05:05.891 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5042/api/orders application/json 120
+2025-01-13 23:05:05.893 +05:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (User|Admin)
+2025-01-13 23:05:05.894 +05:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-01-13 23:05:05.896 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5042/api/orders application/json 120 - 401 0 - 4.0190ms
+2025-01-13 23:07:00.730 +05:00 [INF] Application is shutting down...
+2025-01-13 23:07:04.656 +05:00 [INF] Entity Framework Core 6.0.10 initialized 'OrderDbContext' using provider 'Microsoft.EntityFrameworkCore.InMemory:6.0.10' with options: StoreName=OrdersDb 
+2025-01-13 23:07:04.838 +05:00 [INF] Saved 3 entities to in-memory store.
+2025-01-13 23:07:04.936 +05:00 [INF] User profile is available. Using 'C:\Users\ASUS\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-01-13 23:07:04.997 +05:00 [INF] Now listening on: http://localhost:5042
+2025-01-13 23:07:05.001 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-13 23:07:05.001 +05:00 [INF] Hosting environment: Development
+2025-01-13 23:07:05.002 +05:00 [INF] Content root path: C:\С#\OrdersApi\OrdersApi\OrdersApi\
+2025-01-13 23:07:05.217 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5042/swagger/index.html - -
+2025-01-13 23:07:05.353 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5042/swagger/index.html - - - 200 - text/html;charset=utf-8 139.8329ms
+2025-01-13 23:07:05.494 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5042/swagger/v1/swagger.json - -
+2025-01-13 23:07:05.607 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5042/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 113.1568ms
+2025-01-13 23:09:07.618 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5042/api/auth/login application/json 51
+2025-01-13 23:09:07.628 +05:00 [WRN] Failed to determine the https port for redirect.
+2025-01-13 23:09:07.662 +05:00 [INF] Executing endpoint 'OrdersApi.Presentation.Controllers.AuthController.Login (OrdersApi)'
+2025-01-13 23:09:07.678 +05:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(OrdersApi.Presentation.DTOs.LoginDto) on controller OrdersApi.Presentation.Controllers.AuthController (OrdersApi).
+2025-01-13 23:09:07.709 +05:00 [INF] Executing action method OrdersApi.Presentation.Controllers.AuthController.Login (OrdersApi) - Validation state: "Valid"
+2025-01-13 23:09:07.826 +05:00 [INF] Executed action method OrdersApi.Presentation.Controllers.AuthController.Login (OrdersApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 109.3554ms.
+2025-01-13 23:09:07.834 +05:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-01-13 23:09:07.843 +05:00 [INF] Executed action OrdersApi.Presentation.Controllers.AuthController.Login (OrdersApi) in 157.3426ms
+2025-01-13 23:09:07.844 +05:00 [INF] Executed endpoint 'OrdersApi.Presentation.Controllers.AuthController.Login (OrdersApi)'
+2025-01-13 23:09:07.844 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5042/api/auth/login application/json 51 - 200 - application/json;+charset=utf-8 226.0224ms
+2025-01-13 23:09:41.206 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5042/api/orders application/json 125
+2025-01-13 23:09:41.213 +05:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (User|Admin)
+2025-01-13 23:09:41.222 +05:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-01-13 23:09:41.223 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5042/api/orders application/json 125 - 401 0 - 16.2648ms
+2025-01-13 23:09:56.489 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5042/api/orders application/json 125
+2025-01-13 23:09:56.491 +05:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (User|Admin)
+2025-01-13 23:09:56.492 +05:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-01-13 23:09:56.493 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5042/api/orders application/json 125 - 401 0 - 3.4970ms
+2025-01-13 23:13:11.401 +05:00 [INF] Application is shutting down...
+2025-01-13 23:13:15.400 +05:00 [INF] Entity Framework Core 6.0.10 initialized 'OrderDbContext' using provider 'Microsoft.EntityFrameworkCore.InMemory:6.0.10' with options: StoreName=OrdersDb 
+2025-01-13 23:13:15.581 +05:00 [INF] Saved 3 entities to in-memory store.
+2025-01-13 23:13:15.659 +05:00 [INF] User profile is available. Using 'C:\Users\ASUS\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-01-13 23:13:15.715 +05:00 [INF] Now listening on: http://localhost:5042
+2025-01-13 23:13:15.718 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-13 23:13:15.719 +05:00 [INF] Hosting environment: Development
+2025-01-13 23:13:15.719 +05:00 [INF] Content root path: C:\С#\OrdersApi\OrdersApi\OrdersApi\
+2025-01-13 23:13:16.046 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5042/swagger/index.html - -
+2025-01-13 23:13:16.177 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5042/swagger/index.html - - - 200 - text/html;charset=utf-8 134.7292ms
+2025-01-13 23:13:16.252 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5042/swagger/v1/swagger.json - -
+2025-01-13 23:13:16.363 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5042/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 110.5504ms
+2025-01-13 23:13:20.771 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5042/api/orders application/json 125
+2025-01-13 23:13:20.777 +05:00 [WRN] Failed to determine the https port for redirect.
+2025-01-13 23:13:20.811 +05:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (User|Admin)
+2025-01-13 23:13:20.817 +05:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-01-13 23:13:20.818 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5042/api/orders application/json 125 - 401 0 - 47.7164ms
+2025-01-13 23:16:46.651 +05:00 [INF] Application is shutting down...
+2025-01-13 23:16:50.587 +05:00 [INF] Entity Framework Core 6.0.10 initialized 'OrderDbContext' using provider 'Microsoft.EntityFrameworkCore.InMemory:6.0.10' with options: StoreName=OrdersDb 
+2025-01-13 23:16:50.772 +05:00 [INF] Saved 3 entities to in-memory store.
+2025-01-13 23:16:50.852 +05:00 [INF] User profile is available. Using 'C:\Users\ASUS\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-01-13 23:16:50.901 +05:00 [INF] Now listening on: http://localhost:5042
+2025-01-13 23:16:50.904 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-13 23:16:50.905 +05:00 [INF] Hosting environment: Development
+2025-01-13 23:16:50.905 +05:00 [INF] Content root path: C:\С#\OrdersApi\OrdersApi\OrdersApi\
+2025-01-13 23:16:51.232 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5042/swagger/index.html - -
+2025-01-13 23:16:51.358 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5042/swagger/index.html - - - 200 - text/html;charset=utf-8 131.2878ms
+2025-01-13 23:16:51.450 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5042/swagger/v1/swagger.json - -
+2025-01-13 23:16:51.576 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5042/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 126.2502ms
+2025-01-13 23:16:55.503 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5042/api/orders application/json 125
+2025-01-13 23:16:55.515 +05:00 [WRN] Failed to determine the https port for redirect.
+2025-01-13 23:16:55.551 +05:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (User|Admin)
+2025-01-13 23:16:55.558 +05:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-01-13 23:16:55.559 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5042/api/orders application/json 125 - 401 0 - 55.9646ms
+2025-01-13 23:17:00.546 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5042/api/auth/login application/json 51
+2025-01-13 23:17:00.554 +05:00 [INF] Executing endpoint 'OrdersApi.Presentation.Controllers.AuthController.Login (OrdersApi)'
+2025-01-13 23:17:00.570 +05:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(OrdersApi.Presentation.DTOs.LoginDto) on controller OrdersApi.Presentation.Controllers.AuthController (OrdersApi).
+2025-01-13 23:17:00.598 +05:00 [INF] Executing action method OrdersApi.Presentation.Controllers.AuthController.Login (OrdersApi) - Validation state: "Valid"
+2025-01-13 23:17:00.715 +05:00 [INF] Executed action method OrdersApi.Presentation.Controllers.AuthController.Login (OrdersApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 109.6651ms.
+2025-01-13 23:17:00.725 +05:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-01-13 23:17:00.733 +05:00 [INF] Executed action OrdersApi.Presentation.Controllers.AuthController.Login (OrdersApi) in 156.3152ms
+2025-01-13 23:17:00.734 +05:00 [INF] Executed endpoint 'OrdersApi.Presentation.Controllers.AuthController.Login (OrdersApi)'
+2025-01-13 23:17:00.735 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5042/api/auth/login application/json 51 - 200 - application/json;+charset=utf-8 188.8150ms
+2025-01-13 23:17:13.485 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5042/api/orders application/json 125
+2025-01-13 23:17:13.487 +05:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (User|Admin)
+2025-01-13 23:17:13.488 +05:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-01-13 23:17:13.489 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5042/api/orders application/json 125 - 401 0 - 3.9834ms
+2025-01-13 23:17:17.429 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5042/api/orders application/json 125
+2025-01-13 23:17:17.431 +05:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (User|Admin)
+2025-01-13 23:17:17.435 +05:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-01-13 23:17:17.436 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5042/api/orders application/json 125 - 401 0 - 7.4165ms
+2025-01-13 23:18:37.588 +05:00 [INF] Application is shutting down...
+2025-01-13 23:18:41.551 +05:00 [INF] Entity Framework Core 6.0.10 initialized 'OrderDbContext' using provider 'Microsoft.EntityFrameworkCore.InMemory:6.0.10' with options: StoreName=OrdersDb 
+2025-01-13 23:18:41.739 +05:00 [INF] Saved 3 entities to in-memory store.
+2025-01-13 23:18:41.843 +05:00 [INF] User profile is available. Using 'C:\Users\ASUS\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-01-13 23:18:41.903 +05:00 [INF] Now listening on: http://localhost:5042
+2025-01-13 23:18:41.906 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-13 23:18:41.907 +05:00 [INF] Hosting environment: Development
+2025-01-13 23:18:41.907 +05:00 [INF] Content root path: C:\С#\OrdersApi\OrdersApi\OrdersApi\
+2025-01-13 23:18:42.217 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5042/swagger/index.html - -
+2025-01-13 23:18:42.346 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5042/swagger/index.html - - - 200 - text/html;charset=utf-8 134.3147ms
+2025-01-13 23:18:42.440 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5042/swagger/v1/swagger.json - -
+2025-01-13 23:18:42.555 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5042/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 115.6341ms
+2025-01-13 23:18:49.592 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5042/api/orders application/json 125
+2025-01-13 23:18:49.600 +05:00 [WRN] Failed to determine the https port for redirect.
+2025-01-13 23:18:49.633 +05:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (User|AdminPolicy)
+2025-01-13 23:18:49.638 +05:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-01-13 23:18:49.639 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5042/api/orders application/json 125 - 401 0 - 46.8991ms
+2025-01-13 23:18:52.316 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5042/api/orders application/json 125
+2025-01-13 23:18:52.322 +05:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (User|AdminPolicy)
+2025-01-13 23:18:52.323 +05:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-01-13 23:18:52.324 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5042/api/orders application/json 125 - 401 0 - 8.1981ms
+2025-01-13 23:19:15.629 +05:00 [INF] Application is shutting down...
+2025-01-13 23:19:19.633 +05:00 [INF] Entity Framework Core 6.0.10 initialized 'OrderDbContext' using provider 'Microsoft.EntityFrameworkCore.InMemory:6.0.10' with options: StoreName=OrdersDb 
+2025-01-13 23:19:19.813 +05:00 [INF] Saved 3 entities to in-memory store.
+2025-01-13 23:19:19.890 +05:00 [INF] User profile is available. Using 'C:\Users\ASUS\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-01-13 23:19:19.939 +05:00 [INF] Now listening on: http://localhost:5042
+2025-01-13 23:19:19.942 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-13 23:19:19.942 +05:00 [INF] Hosting environment: Development
+2025-01-13 23:19:19.943 +05:00 [INF] Content root path: C:\С#\OrdersApi\OrdersApi\OrdersApi\
+2025-01-13 23:19:20.285 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5042/swagger/index.html - -
+2025-01-13 23:19:20.401 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5042/swagger/index.html - - - 200 - text/html;charset=utf-8 120.1951ms
+2025-01-13 23:19:20.478 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5042/swagger/v1/swagger.json - -
+2025-01-13 23:19:20.594 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5042/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 115.4143ms
+2025-01-13 23:19:26.515 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5042/api/auth/login application/json 49
+2025-01-13 23:19:26.522 +05:00 [WRN] Failed to determine the https port for redirect.
+2025-01-13 23:19:26.555 +05:00 [INF] Executing endpoint 'OrdersApi.Presentation.Controllers.AuthController.Login (OrdersApi)'
+2025-01-13 23:19:26.571 +05:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(OrdersApi.Presentation.DTOs.LoginDto) on controller OrdersApi.Presentation.Controllers.AuthController (OrdersApi).
+2025-01-13 23:19:26.601 +05:00 [INF] Executing action method OrdersApi.Presentation.Controllers.AuthController.Login (OrdersApi) - Validation state: "Valid"
+2025-01-13 23:19:26.719 +05:00 [INF] Executed action method OrdersApi.Presentation.Controllers.AuthController.Login (OrdersApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 110.3265ms.
+2025-01-13 23:19:26.729 +05:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-01-13 23:19:26.738 +05:00 [INF] Executed action OrdersApi.Presentation.Controllers.AuthController.Login (OrdersApi) in 159.4018ms
+2025-01-13 23:19:26.739 +05:00 [INF] Executed endpoint 'OrdersApi.Presentation.Controllers.AuthController.Login (OrdersApi)'
+2025-01-13 23:19:26.739 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5042/api/auth/login application/json 49 - 200 - application/json;+charset=utf-8 224.4931ms
+2025-01-13 23:19:40.763 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5042/api/orders application/json 120
+2025-01-13 23:19:40.772 +05:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2025-01-13 23:19:40.778 +05:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-01-13 23:19:40.780 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5042/api/orders application/json 120 - 401 0 - 16.6508ms
+2025-01-13 23:19:43.005 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5042/api/orders application/json 120
+2025-01-13 23:19:43.007 +05:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2025-01-13 23:19:43.010 +05:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-01-13 23:19:43.012 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5042/api/orders application/json 120 - 401 0 - 6.5970ms
+2025-01-13 23:19:43.511 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5042/api/orders application/json 120
+2025-01-13 23:19:43.512 +05:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2025-01-13 23:19:43.514 +05:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-01-13 23:19:43.515 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5042/api/orders application/json 120 - 401 0 - 3.8242ms
+2025-01-13 23:19:43.900 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5042/api/orders application/json 120
+2025-01-13 23:19:43.901 +05:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2025-01-13 23:19:43.902 +05:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-01-13 23:19:43.903 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5042/api/orders application/json 120 - 401 0 - 2.7776ms
+2025-01-13 23:22:43.307 +05:00 [INF] Application is shutting down...
+2025-01-13 23:22:47.254 +05:00 [INF] Entity Framework Core 6.0.10 initialized 'OrderDbContext' using provider 'Microsoft.EntityFrameworkCore.InMemory:6.0.10' with options: StoreName=OrdersDb 
+2025-01-13 23:22:47.434 +05:00 [INF] Saved 3 entities to in-memory store.
+2025-01-13 23:22:47.508 +05:00 [INF] User profile is available. Using 'C:\Users\ASUS\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-01-13 23:22:47.556 +05:00 [INF] Now listening on: http://localhost:5042
+2025-01-13 23:22:47.559 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-13 23:22:47.560 +05:00 [INF] Hosting environment: Development
+2025-01-13 23:22:47.560 +05:00 [INF] Content root path: C:\С#\OrdersApi\OrdersApi\OrdersApi\
+2025-01-13 23:22:47.856 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5042/swagger/index.html - -
+2025-01-13 23:22:48.005 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5042/swagger/index.html - - - 200 - text/html;charset=utf-8 153.5925ms
+2025-01-13 23:22:48.088 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5042/swagger/v1/swagger.json - -
+2025-01-13 23:22:48.206 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5042/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 117.9215ms
+2025-01-13 23:22:54.248 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5042/api/orders application/json 125
+2025-01-13 23:22:54.257 +05:00 [WRN] Failed to determine the https port for redirect.
+2025-01-13 23:22:54.289 +05:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2025-01-13 23:22:54.294 +05:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-01-13 23:22:54.296 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5042/api/orders application/json 125 - 401 0 - 47.8551ms
+2025-01-13 23:22:59.615 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5042/api/auth/login application/json 51
+2025-01-13 23:22:59.622 +05:00 [INF] Executing endpoint 'OrdersApi.Presentation.Controllers.AuthController.Login (OrdersApi)'
+2025-01-13 23:22:59.640 +05:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(OrdersApi.Presentation.DTOs.LoginDto) on controller OrdersApi.Presentation.Controllers.AuthController (OrdersApi).
+2025-01-13 23:22:59.668 +05:00 [INF] Executing action method OrdersApi.Presentation.Controllers.AuthController.Login (OrdersApi) - Validation state: "Valid"
+2025-01-13 23:22:59.782 +05:00 [INF] Executed action method OrdersApi.Presentation.Controllers.AuthController.Login (OrdersApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 107.0647ms.
+2025-01-13 23:22:59.790 +05:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-01-13 23:22:59.799 +05:00 [INF] Executed action OrdersApi.Presentation.Controllers.AuthController.Login (OrdersApi) in 151.9439ms
+2025-01-13 23:22:59.800 +05:00 [INF] Executed endpoint 'OrdersApi.Presentation.Controllers.AuthController.Login (OrdersApi)'
+2025-01-13 23:22:59.801 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5042/api/auth/login application/json 51 - 200 - application/json;+charset=utf-8 186.2381ms
+2025-01-13 23:26:26.007 +05:00 [INF] Application is shutting down...
+2025-01-13 23:26:30.655 +05:00 [INF] Entity Framework Core 6.0.10 initialized 'OrderDbContext' using provider 'Microsoft.EntityFrameworkCore.InMemory:6.0.10' with options: StoreName=OrdersDb 
+2025-01-13 23:26:30.835 +05:00 [INF] Saved 3 entities to in-memory store.
+2025-01-13 23:26:30.913 +05:00 [INF] User profile is available. Using 'C:\Users\ASUS\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-01-13 23:26:30.961 +05:00 [INF] Now listening on: http://localhost:5042
+2025-01-13 23:26:30.965 +05:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-01-13 23:26:30.966 +05:00 [INF] Hosting environment: Development
+2025-01-13 23:26:30.967 +05:00 [INF] Content root path: C:\С#\OrdersApi\OrdersApi\OrdersApi\
+2025-01-13 23:26:31.168 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5042/swagger/index.html - -
+2025-01-13 23:26:31.289 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5042/swagger/index.html - - - 200 - text/html;charset=utf-8 125.2379ms
+2025-01-13 23:26:31.366 +05:00 [INF] Request starting HTTP/1.1 GET http://localhost:5042/swagger/v1/swagger.json - -
+2025-01-13 23:26:31.476 +05:00 [INF] Request finished HTTP/1.1 GET http://localhost:5042/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 110.3051ms
+2025-01-13 23:26:36.768 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5042/api/auth/login application/json 51
+2025-01-13 23:26:36.777 +05:00 [WRN] Failed to determine the https port for redirect.
+2025-01-13 23:26:36.812 +05:00 [INF] Executing endpoint 'OrdersApi.Presentation.Controllers.AuthController.Login (OrdersApi)'
+2025-01-13 23:26:36.828 +05:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(OrdersApi.Presentation.DTOs.LoginDto) on controller OrdersApi.Presentation.Controllers.AuthController (OrdersApi).
+2025-01-13 23:26:36.857 +05:00 [INF] Executing action method OrdersApi.Presentation.Controllers.AuthController.Login (OrdersApi) - Validation state: "Valid"
+2025-01-13 23:26:36.972 +05:00 [INF] Executed action method OrdersApi.Presentation.Controllers.AuthController.Login (OrdersApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 106.4207ms.
+2025-01-13 23:26:36.980 +05:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-01-13 23:26:36.989 +05:00 [INF] Executed action OrdersApi.Presentation.Controllers.AuthController.Login (OrdersApi) in 154.4545ms
+2025-01-13 23:26:36.990 +05:00 [INF] Executed endpoint 'OrdersApi.Presentation.Controllers.AuthController.Login (OrdersApi)'
+2025-01-13 23:26:36.991 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5042/api/auth/login application/json 51 - 200 - application/json;+charset=utf-8 222.9492ms
+2025-01-13 23:26:52.300 +05:00 [INF] Request starting HTTP/1.1 POST http://localhost:5042/api/orders application/json 125
+2025-01-13 23:26:52.311 +05:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2025-01-13 23:26:52.319 +05:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-01-13 23:26:52.320 +05:00 [INF] Request finished HTTP/1.1 POST http://localhost:5042/api/orders application/json 125 - 401 0 - 19.4633ms
